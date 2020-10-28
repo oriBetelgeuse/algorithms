@@ -4,7 +4,7 @@ public class Percolation {
 
     private int size;
     private int[][] grid;
-    private WeightedQuickUnionUF connection;
+    private UnionFind connection;
 
     // creates n-by-n grid, with all sites initially blocked
     public Percolation(int n) {
@@ -12,7 +12,7 @@ public class Percolation {
 
         size = n;
         grid = new int[n][n];
-        connection = new WeightedQuickUnionUF(n * n + 2);
+        connection = new UnionFind(n * n + 2);
 
         for (int i = 0; i < n; i++)
             for (int j = 0; j < n; j++)
