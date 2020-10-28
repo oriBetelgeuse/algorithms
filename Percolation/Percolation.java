@@ -1,11 +1,5 @@
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
-/* *****************************************************************************
- *  Name:              Alan Turing
- *  Coursera User ID:  123456
- *  Last modified:     1/1/2019
- **************************************************************************** */
-
 public class Percolation {
 
     private int size;
